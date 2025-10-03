@@ -1,0 +1,30 @@
+
+.fs-wrapper { font:14px system-ui, Arial, sans-serif; margin:1.2rem 0; }
+.fs-titulo { margin:0 0 .8rem; font-weight:600; }
+.fs-tabla { border-collapse:collapse; width:100%; }
+.fs-tabla th, .fs-tabla td { border-bottom:1px solid #ddd; padding:6px 8px; text-align:left; }
+.fs-tabla th { background:#f5f5f5; font-weight:600; }
+.fs-tabla td.right, .fs-tabla th.right { text-align:right; }
+.fs-aggregado tr[data-fs-user]:hover { background:#fafafa; }
+
+.fs-resumen-detalle { display:flex; gap:1.2rem; flex-wrap:wrap; margin:0 0 10px; }
+.fs-resumen-detalle div { background:#f5f5f5; padding:4px 8px; border-radius:4px; }
+
+/* Buscador */
+.fs-busqueda-bar { display:flex; gap:.5rem; align-items:center; flex-wrap:wrap; margin:0 0 .8rem; }
+.fs-buscar { padding:6px 10px; border:1px solid #bbb; border-radius:4px; min-width:220px; font:inherit; }
+.fs-buscar:focus { outline:2px solid #2684ff33; border-color:#2684ff; }
+.fs-clear { background:#eee; border:1px solid #bbb; border-radius:4px; padding:6px 10px; cursor:pointer; font-size:16px; line-height:1; }
+.fs-clear:hover { background:#ddd; }
+.fs-count { font-size:12px; color:#555; }
+.fs-row-hidden { display:none; }
+
+/* Auth */
+.fs-auth { background:#fffaf0; border:1px solid #f0dca8; padding:10px; border-radius:6px; margin:0 0 .8rem; }
+.fs-auth-status { color:#7a5b00; margin-bottom:.5rem; }
+.fs-auth .fs-btn { background:#2684ff; color:#fff; border:1px solid #2684ff; border-radius:4px; padding:6px 10px; cursor:pointer; }
+.fs-auth .fs-btn:hover { background:#1f6ed4; border-color:#1f6ed4; }
+.fs-btn.fs-btn-outline { background:#fff; color:#2684ff; }
+
+/* Ocultar área de datos cuando no hay sesión (redundante al inline style, pero útil) */
+.fs-data[aria-hidden="true"] { display:none; }
